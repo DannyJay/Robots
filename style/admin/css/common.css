@@ -1,0 +1,17 @@
+body {
+  font-family: "Microsoft YaHei","WenQuanYi Micro Hei",SimHei,tahoma,sans-serif;
+  font-size: 16px;
+  line-height: 1.428571429;
+  color: rgba(51, 51, 51, 0);
+  background-color: #f3f3f3;
+}
+
+article{
+	background: #ffffff;
+	width: 100%;
+}
+
+ol, ul {
+    list-style: outside none none;
+}
+

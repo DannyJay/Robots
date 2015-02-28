@@ -1,25 +1,67 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" ng-app>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Robots</title>
+    <link href="<?php echo base_url() . 'style/index/' ?>css/common-less.css" rel="stylesheet" />
     <link href="<?php echo base_url() . 'style/index/' ?>css/bootstrap.css" rel="stylesheet" />
     <link href="<?php echo base_url() . 'style/index/' ?>css/homepage.css" rel="stylesheet" />
     <link href="<?php echo base_url() . 'style/index/' ?>css/common.css" rel="stylesheet" />
     <script src="<?php echo base_url() . 'style/index/' ?>js/jquery.min.js"></script>
-   <script src="<?php echo base_url() . 'style/index/' ?>js/jquery-1.8.3.min.js"></script>
     <script src="<?php echo base_url() . 'style/index/' ?>js/bootstrap.js"></script>
     <script src="<?php echo base_url() . 'style/index/' ?>js/owl.carousel.js"></script>
     <script type="text/javascript">
-    $(function(){
-        $('#owl-demo').owlCarousel({
-            items: 1,
-            navigation: true,
-            navigationText: ["",""],
-            autoPlay: true,
-            stopOnHover: true,
+        $(function(){
+            $('#owl-demo-1').owlCarousel({
+                items: 1,
+                navigation: true,
+                navigationText: ["",""],
+                autoPlay: true,
+                stopOnHover: true,
+            });
         });
-    });
+        $(function(){
+            $('#owl-demo-2').owlCarousel({
+                items: 1,
+                navigation: true,
+                navigationText: ["",""],
+                autoPlay: true,
+                stopOnHover: true,
+            });
+        });
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $(".navbar-login").click(function(){
+                $("#signin").show();
+                return false;
+            });
+
+            $(".navbar-sign").click(function(){
+                $("#signup").show();
+                return false;
+            });
+
+            $(".signin").click(function(){
+                $("#signin").show();
+                $("#signup").hide();
+                return false;
+            });
+
+            $(".signup").click(function(){
+                $("#signin").hide();
+                $("#signup").show();
+                return false;
+            });
+
+
+            $(".rl-close").click(function(){
+                $("#signin").hide();
+                $("#signup").hide();
+            });
+
+            
+        }); 
     </script>
 
 </head> 
@@ -32,11 +74,311 @@
     
 
         <div class="main-wrap">
-            <section class="robots">
+            <section class="robots_new">
                 <h3 class="title-a">
-                    最新更新
+                    New Robots
                 </h3>
-                <div id="owl-demo" class="owl-carousel">
+                <div id="owl-demo-1" class="owl-carousel">
+                    <ul class="robotslist itme">
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut  2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut 2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut 2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut 2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut 2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut 2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut 2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut 2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                    <ul class="robotslist itme">
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut 2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut 2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut 2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut 2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut 2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut 2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut 2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="" target="_blank" class="robots_img">
+                                <div class="shade">
+                                    <img src="<?php echo base_url() . 'style/index/' ?>images/4.jpg" alt="" />
+                                </div>
+                                <span class="robots_name">
+                                    Robonaut 2
+                                </span>
+                            </a>                                                    
+                            <div class="robots_info">
+                                <a href="http://mooc.guokr.com/course/1912/Explore-Filmmaking--from-Script-to-Screen/" target="_blank" data-gaevent="index-reco-title:v4.0.0.0:academy">
+                                    <span class="robots_creator"><h5>CREATOR:</h5>NASA Johnson Space Center and GM</span>
+                                    <span class="robots_location"><h5>COUNTRY:</h5>United States</span>
+                                    <span class="robots_year"><h5>YEAR:</h5>2010</span>
+                                    <span class="robots_type"><h5>TYPE:</h5>Areospace;Humanoid</span>
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="robots_featured">
+                <h3 class="title-a">
+                    Featured Robots
+                </h3>
+                <div id="owl-demo-2" class="owl-carousel">
                     <ul class="robotslist itme">
                         <li>
                             <a href="" target="_blank" class="robots_img">
@@ -332,7 +674,93 @@
                 </div>
             </section>
         </div>
+        
 
+        <div id="signin" class="rl-modal in" style="display:none;">
+          <div class="rl-modal-header">
+            <h1>
+                <span class="signin active-title">登录</span>
+                <span class="signup" data-fromto="signin:signup">注册</span>
+            </h1>
+            <button type="button" class="rl-close"></button>
+          </div>
+          <div class="rl-modal-body">
+            <div class="clearfix">
+                <div class="l-left-wrap l">
+                    <form id="signup-form" autocomplete="off">
+                        <div class="rlf-group">
+                            <input type="text" name="email" data-validate="email" autocomplete="off" class="ipt ipt-email" placeholder="请输入登录邮箱">
+                            <p class="rlf-tip-wrap"></p>
+                            <input style="display:none;">
+                        </div>
+                        <div class="rlf-group">
+                            <input type="password" name="password" autocomplete="off" class="ipt ipt-pwd" placeholder="请输入密码">
+                            <p class="rlf-tip-wrap"></p>
+                        </div>
+                        <div class="rlf-group rlf-appendix clearfix">
+                            <label for="auto-signin" class="l" hidefocus="true"><input type="checkbox" checked="checked" id="auto-signin">自动登录</label>
+                            <a href="/user/newforgot" class="rlf-forget r" target="_blank" hidefocus="true">忘记密码 </a>
+                        </div>
+                        <div class="rlf-group clearfix">
+                            <p class="rlf-tip-wrap " id="signin-globle-error"></p>
+                            <input type="button" id="signin-btn" value="登录" hidefocus="true" class="btn-red btn-full">
+                        </div>
+                    </form>
+                </div>
+            </div>
+          </div>
+          <div class="rl-model-footer">
+            <div class="pop-login-sns clearfix">
+                <span class="l">联合登录</span>
+                <a href="javascript:void(0)" hidefocus="true" data-login-sns="/user/loginweibo" class="pop-sns-weibo r"><!--<i class="icon-weibo"></i>-->微博</a>
+                <a href="javascript:void(0)" hidefocus="true" data-login-sns="/user/loginqq" class="pop-sns-qq r"><!--理解icon-moon,之后再说<i class="icon-qq"></i>-->QQ</a>
+                <a href="javascript:void(0)" hidefocus="true" data-login-sns="/user/loginweixin" class="pop-sns-weixin r"><!--<i class="icon-weixin"></i>-->微信</a>
+            </div>
+          </div>
+        </div>
+
+        <div id="signup" class="rl-modal  in" style="display:none">
+          <div class="rl-modal-header">
+            <button type="button" class="rl-close" data-dismiss="modal" aria-hidden="true"></button>
+            <h1>
+                <span class="signin" data-fromto="signup:signin">登录</span>
+                <span class="signup active-title">注册</span>
+            </h1>
+          </div>
+          <div class="rl-modal-body">
+            <form id="signup-form">
+                <div class="rlf-group">
+                    <input type="text" name="email" data-validate="email" class="ipt ipt-email" autocomplete="off" placeholder="请输入登录邮箱">
+                    <p class="rlf-tip-wrap"><span style="display:none">邮箱将作为您主要的身份识别，请输入您有效的邮箱</span></p>
+                    <input style="display:none;">
+                </div>
+                <div class="rlf-group">
+                    <input type="password" name="password" data-validate="password" class="ipt ipt-pwd" placeholder="请输入密码">
+                    <p class="rlf-tip-wrap"><span style="display:none">请输入6-16位密码，区分大小写，不能使用空格</span></p>
+                </div>
+                <div class="rlf-group">
+                    <input type="password" name="cfmpwd" class="ipt ipt-pwd" placeholder="请再次输入密码">
+                    <p class="rlf-tip-wrap"><span style="display:none">请再次输入密码</span></p>
+                </div>
+                <div class="rlf-group">
+                    <input type="text" name="nick" data-validate="nick" class="ipt ipt-nick" placeholder="请输入用户昵称">
+                    <p class="rlf-tip-wrap"><span style="display:none">请输入昵称，2-18位中英文、数字或下划线！</span></p>
+                </div>
+                <div class="rlf-group clearfix">
+                    <p class="rlf-tip-wrap rlf-g-tip" id="signup-globle-error"></p>
+                    <input type="button" id="signup-btn" value="注册" hidefocus="true" class="btn-red btn-full r">
+                </div>
+            </form>
+          </div>
+          <div class="rl-model-footer">
+            <div class="pop-login-sns clearfix">
+                <span class="l">联合登录</span>
+                <a href="javascript:void(0)" hidefocus="true" data-login-sns="/user/loginweibo" class="pop-sns-weibo r"><i class="icon-weibo"></i>微博</a>
+                <a href="javascript:void(0)" hidefocus="true" data-login-sns="/user/loginqq" class="pop-sns-qq r"><i class="icon-qq"></i>QQ</a>
+                <a href="javascript:void(0)" hidefocus="true" data-login-sns="/user/loginweixin" class="pop-sns-weixin r"><i class="icon-weixin"></i>微信</a>
+            </div>
+          </div>
+        </div>
     
         <div class="footer">
             <div class="aboutus">

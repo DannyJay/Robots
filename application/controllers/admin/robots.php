@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Home extends CI_Controller {
+class Robots extends CI_Controller {
 
 	/**
 	 * Index Page for this controller.
@@ -17,17 +17,12 @@ class Home extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see http://codeigniter.com/user_guide/general/urls.html
 	 */
-	public function index()
+	/**
+	**发表方法
+	**/
+	public function send_robots()
 	{
-		$this->load->view('index/home/home.html');
-	}
-
-	public function robots()
-	{
-		$this->load->view('index/robots/robots.html');
+		$this->load->view('admin/robots.html');
 	}
 
 }
-
-/* End of file welcome.php */
-/* Location: ./application/controllers/welcome.php */

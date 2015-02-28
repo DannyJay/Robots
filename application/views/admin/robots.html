@@ -1,0 +1,248 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Robots</title>
+    <link href="<?php echo base_url() . 'style/admin/' ?>css/bootstrap.css" rel="stylesheet" />
+    <link href="<?php echo base_url() . 'style/admin/' ?>css/homepage.css" rel="stylesheet" />
+    <link href="<?php echo base_url() . 'style/admin/' ?>css/common.css" rel="stylesheet" />
+    <link href="<?php echo base_url() . 'style/admin/' ?>css/robots/add.css" rel="stylesheet" />
+    <script src="<?php echo base_url() . 'style/admin/' ?>js/jquery.min.js"></script>
+    <script src="<?php echo base_url() . 'style/admin/' ?>js/bootstrap.js"></script>
+    <script src="<?php echo base_url() . 'style/admin/' ?>js/uploadPreview.js"></script>
+    <script>
+    $(function () {
+    $("#up").uploadPreview({ Img: "ImgPr", Width: 185, Height: 225 });
+    });
+    </script>
+
+</head>
+
+<body>
+    <?php echo $this->load->view('admin/home/homenav.html') ?>
+    <div>
+
+        <div class="main-wrap">
+            <div class="warp">
+                <div class="div_from_aoto">
+                    <form>
+                        <div class="control-group">
+                            <label class="laber_from">NAME:</label>
+                            <input type="text" name="email" data-validate="email" class="ipt ipt-email" autocomplete="off" placeholder="name">
+                        </div>
+                        <div class="control-group">
+                            <label class="laber_from">CREATOR:</label>
+                            <input type="text" name="email" data-validate="email" class="ipt ipt-email" autocomplete="off" placeholder="creator">
+                        </div>
+                        <div class="control-group">
+                            <label class="laber_from">LOCATION:</label>
+                            <div  class="controls" >
+                                <select class="ipt input_select">
+                                    <option selected>United States</option>
+                                    <option>China</option>
+                                    <option>Japan</option>
+                                    <option>Germany</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="laber_from">YEAR:</label>
+                            <div  class="controls" >
+                                <select class="ipt input_select">
+                                    <option selected>2015</option>
+                                    <option>2014</option>
+                                    <option>2013</option>
+                                    <option>2012</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="control-group">
+                            <label class="laber_from">TYPE:</label>
+                            <div class="controls">
+                                <div class="input-append">
+                                    <input type="text" id="typetxt" class="ipt" />
+                                    <div style="display:none" id="selectlxr"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--<div class="control-group">
+                            <label class="laber_from" ></label>
+                            <div class="controls" ><button class="btn btn-success" style="width:120px;" >确认</button></div>
+                        </div>-->
+                        <div class="control-image">
+                            <div><img id="ImgPr" width="185" height="225" /></div>
+                            <input type="file" name="file" id="up" />
+                        </div>
+                        <h3>Details</h3>
+                        <textarea name="info" id="info" class="phd error-field" cols="30" rows="5" placeholder="骚年，哪有不爽，来喷吧！"></textarea>
+                    </form>
+                    <div class="segment">
+                    </div>
+                    <form action="">
+                        <h2>SPECIFICATIONS:</h2>
+                        <div class="control-group">
+                            <label class="laber_from_speces">Height:</label>
+                            <span class="span_speces">
+                                <input type="text" name="height" class="ipt speces" placeholder="">
+                                <span>cm</span>
+                                <span>|</span>
+                                <input type="text" name="height" class="ipt speces" placeholder="">
+                                <span>in</span>
+                            </span>
+                            <label class="laber_from_speces">Length:</label>
+                            <span class="span_speces">
+                                <input type="text" name="length" class="ipt speces" placeholder="">
+                                <span>cm</span>
+                                <span>|</span>
+                                <input type="text" name="length" class="ipt speces" placeholder="">
+                                <span>in</span>
+                            </span>
+                        </div>
+                        <div class="control-group">
+                            <label class="laber_from_speces">Width:</label>
+                            <span class="span_speces">
+                                <input type="text" name="width" class="ipt speces" placeholder="">
+                                <span>cm</span>
+                                <span>|</span>
+                                <input type="text" name="width" class="ipt speces" placeholder="">
+                                <span>in</span>
+                            </span>
+                            <label class="laber_from_speces">Weight:</label>
+                            <span class="span_speces">
+                                <input type="text" name="weight" class="ipt speces" placeholder="">
+                                <span>kg</span>
+                                <span>|</span>
+                                <input type="text" name="weight" class="ipt speces" placeholder="">
+                                <span>lb</span>
+                            </span>
+                        </div>
+                        <div class="control-group">
+                            <label class="laber_from_speces">Speed:</label>
+                            <span class="span_speces">
+                                <input type="text" name="speed" class="ipt speces" placeholder="">
+                                <span>cm</span>
+                                <span>|</span>
+                                <input type="text" name="speed" class="ipt speces" placeholder="">
+                                <span>in</span>
+                            </span>
+                            <label class="laber_from_speces">Cost:</label>
+                            <input type="text" name="email" data-validate="email" class="ipt " autocomplete="off" placeholder="">
+                        </div>
+                        <h3>Features:</h3>
+                        <textarea name="info" id="info" class="phd error-field" cols="30" rows="3" placeholder="骚年，哪有不爽，来喷吧！"></textarea>
+                        <h3>Sensors:</h3>
+                        <textarea name="info" id="info" class="phd error-field" cols="30" rows="4" placeholder="骚年，哪有不爽，来喷吧！"></textarea>
+                        <h3>Actuators:</h3>
+                        <textarea name="info" id="info" class="phd error-field" cols="30" rows="2" placeholder="骚年，哪有不爽，来喷吧！"></textarea>
+                        <h3>Power:</h3>
+                        <textarea name="info" id="info" class="phd error-field" cols="30" rows="4" placeholder="骚年，哪有不爽，来喷吧！"></textarea>
+                        <h3>Computing:</h3>
+                        <textarea name="info" id="info" class="phd error-field" cols="30" rows="2" placeholder="骚年，哪有不爽，来喷吧！"></textarea>
+                        <h3>Software:</h3>
+                        <textarea name="info" id="info" class="phd error-field" cols="30" rows="2" placeholder="骚年，哪有不爽，来喷吧！"></textarea>
+                        <h3>Degree Of Freedom:</h3>
+                        <textarea name="info" id="info" class="phd error-field" cols="30" rows="1" placeholder="骚年，哪有不爽，来喷吧！"></textarea>
+                        <h3>Materials:</h3>
+                        <textarea name="info" id="info" class="phd error-field" cols="30" rows="3" placeholder="骚年，哪有不爽，来喷吧！"></textarea>
+                    </form>
+                    <div class="segment">
+                    </div>
+                    <form action="">
+                        <h2>History:</h2>
+                        <textarea name="info" id="info" class="phd error-field" cols="30" rows="10" placeholder="骚年，哪有不爽，来喷吧！"></textarea>
+                    </form>
+                    <div class="segment">
+                    </div>
+                    <form action="">
+                        <h2>Website:</h2>
+                        <textarea name="info" id="info" class="phd error-field" cols="30" rows="1" placeholder="骚年，哪有不爽，来喷吧！"></textarea>
+                    </form>
+                </div>
+            </div>
+        </div>
+    
+    
+        <div class="footer">
+            <div class="aboutus">
+                <div class="aboutus-bottom">
+                    <ol class="nav footer-about">
+                        <li>
+                            <a href="#" target="_blank">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">关于我们</a>
+                        </li>
+                        <li>
+                            <a href="#" target="_blank">友情链接</a>
+                        </li>
+                    </ol>
+                    <ol class="nav footer-follow">
+                        <li class="focusus">关注我们</li>
+                        <li><a href="" target="_blank"></a></li>
+                        <li><a href="" target="_blank"></a></li>
+                        <li><a href="" target="_blank"></a></li>
+                        <li><a href="" target="_blank"></a></li>
+                    </ol>
+
+                </div>
+                <p class="bottom-info">
+                    <span class="info">
+                        <span>电话查号台：010-62793001</span>
+                        <span>管理员信箱：xinxiban@tsinghua.edu.cn</span>
+                        <span>地址：北京市海淀区清华大学</span>
+                    </span>
+                    <span class="copy">版权所有 © 清华大学　　访问量:<span id="total">74373275</span></span>
+                </p>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+
+    <script src="<?php echo base_url() . 'style/admin/' ?>js/robots/jquery.artDialog.js?skin=idialog"></script>
+    <script>
+    //循环输出创建十个复选框
+    var chtml = "";
+    for (var i = 0; i < 10; i++) {
+       chtml += "<div style='word-wrap:break-word; width:450px; '>";
+       chtml += '<label style="float:left;padding:15px"><input type="checkbox" name="aaa" value="1" class="{required:true}" /><span style="margin-left:10px">小'+i+'</span></label>';
+       chtml += "</div>";
+    }
+    //把得到字符串利用jquery添加到元素里面生成checkbox
+    $("#selectlxr").html(chtml);
+    //创建一个 dialog弹出框(第三方插件有兴趣可以看下 超赞的一款插件 http://www.planeart.cn/demo/artDialog/) 把创建好的弹出框隐藏起来
+    var dia = $.dialog(
+       {
+           title: "TYPE", width: "500px",
+           content: $("#selectlxr").html(),
+           close: function () {
+               this.hide();
+               return false;
+           },
+           follow: document.getElementById("type")
+       }
+       ).hide();
+
+    //点击 显示
+    $("#typetxt").click(function () {
+       dia.show();
+    })
+    //事件 获取checkbox点击时候的父元素的值 添加到text 如果点击收的选中状态为checked 则添加 否则 删除
+    $("input[type=checkbox]").click(function () {
+       try {
+           if ($(this).attr("checked")) {
+               $("#typetxt").val($("#typetxt").val() + $(this).parent().text() + ";");
+           } else {
+               $("#typetxt").val($("#typetxt").val().replace($(this).parent().text() + ';', ""));
+           }
+       } catch (e) {
+           $("#typetxt").val("");
+       }
+    })
+    //这里出了问题
+    //初步测试 暂无小bug 可以为text增加一个只读  
+    </script>
+    
+
+</html>
