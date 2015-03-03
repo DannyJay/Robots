@@ -408,12 +408,12 @@ if (typeof Object.create !== "function") {
             base.owlControls.append(buttonsWrapper);
 
             base.buttonPrev = $("<div/>", {
-                "class" : "owl-prev glyphicon-chevron-left",
+                "class" : "owl-prev glyphicon glyphicon-chevron-left",
                 "html" : base.options.navigationText[0] || ""
             });
 
             base.buttonNext = $("<div/>", {
-                "class" : "owl-next glyphicon-chevron-right",
+                "class" : "owl-next glyphicon glyphicon-chevron-right",
                 "html" : base.options.navigationText[1] || ""
             });
 
