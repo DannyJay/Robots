@@ -49,9 +49,9 @@ $active_group = 'default';
 $active_record = TRUE;
 
 $db['default']['hostname'] = 'localhost';
-$db['default']['username'] = '';
-$db['default']['password'] = '';
-$db['default']['database'] = '';
+$db['default']['username'] = 'root';       //mysql登录的用户名，默认为root
+$db['default']['password'] = 'vagrant';    //该用户名登录mysql的密码
+$db['default']['database'] = 'robots';     //该项目使用的数据库（需要先创建好），可以使用phpMyAdmin创建
 $db['default']['dbdriver'] = 'mysql';
 $db['default']['dbprefix'] = '';
 $db['default']['pconnect'] = TRUE;
